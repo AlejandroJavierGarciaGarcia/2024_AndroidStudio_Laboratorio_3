@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(modifier: Modifier = Modifier) {
     Column{
         Text(
-            text = "Diego Fernando Patzan Marroquin",
+            text = stringResource(R.string.patzan),
             modifier = modifier
         )
         Text(
@@ -58,3 +58,12 @@ fun Greeting(modifier: Modifier = Modifier) {
     }
 }
 
+
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    Lab_3_Grupal_GITTheme {
+        Greeting()
+    }
+}
