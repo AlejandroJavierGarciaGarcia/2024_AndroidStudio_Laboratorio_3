@@ -44,8 +44,20 @@ class MainActivity : ComponentActivity() {
 fun Greeting(modifier: Modifier = Modifier) {
     Column{
         Text(
+            text = stringResource(R.string.daniel),
+            style = TextStyle(
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
+        )
+        Text(
             text = stringResource(R.string.patzan),
-            modifier = modifier
+            style = TextStyle(
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            )
         )
         Text(
           text = stringResource(R.string.alejandro),
