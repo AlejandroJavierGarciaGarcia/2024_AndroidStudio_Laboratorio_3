@@ -12,6 +12,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab_3_grupal_git.ui.theme.Lab_3_Grupal_GITTheme
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+
+
+
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +31,6 @@ class MainActivity : ComponentActivity() {
             Lab_3_Grupal_GITTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,17 +40,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        text = stringResource(R.string.alejandro),
+        style = TextStyle(
+            fontSize = 18.sp,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center
+        )
     )
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Lab_3_Grupal_GITTheme {
-        Greeting("Android")
-    }
-}
