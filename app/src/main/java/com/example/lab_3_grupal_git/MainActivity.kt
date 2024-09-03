@@ -75,6 +75,14 @@ fun Greeting(modifier: Modifier = Modifier) {
           textAlign = TextAlign.Center
           )
         )
+        Text(
+          text = stringResource(R.string.Juan),
+          style = TextStyle(
+          fontSize = 18.sp,
+          fontWeight = FontWeight.Bold,
+          textAlign = TextAlign.Center
+          )
+        )
     }
 }
 
